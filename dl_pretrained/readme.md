@@ -1,3 +1,48 @@
+
+Main idea:
+
+- Data preparation:
+
+  - Images are loaded from specified directories and preprocessed.
+  - The dataset is split into training and testing sets.
+
+
+- Model architecture:
+
+  - Uses a pre-trained VGG16 model as a feature extractor.
+  - Adds a custom classifier on top of the VGG16 features.
+  - Implements adaptive pooling to handle different input sizes.
+
+
+- Training:
+
+  - Uses CrossEntropyLoss as the loss function.
+  - Uses SGD optimizer with momentum.
+  - Trains for 150 epochs.
+
+
+- Evaluation:
+
+  - Calculates and prints the test accuracy.
+
+
+- Utility functions:
+
+  - Includes a function to classify a single image.
+
+
+- Model saving and loading:
+
+  - Saves the trained model and optimizer state.
+  - Includes commented-out code for loading a saved model.
+
+
+- Test on a single image:
+
+  - Loads and classifies a test image, displaying it and printing the predicted category.
+
+
+
 Result for sigle layer label structure:
 
 Epoch [1/150], Loss: 1.8023
